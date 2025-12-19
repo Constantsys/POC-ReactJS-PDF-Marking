@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# POC – ReactJS PDF Marking
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About
+This project is a **Proof of Concept (POC)** built using **ReactJS** that allows users to **interact with PDF documents** directly in the browser.
 
-## Available Scripts
+Users can:
+- Add **questions** on specific PDF pages
+- **Highlight** text or areas
+- Add **signatures**
+- Mark and annotate PDF pages visually
 
-In the project directory, you can run:
+This POC demonstrates client-side PDF rendering and annotation capabilities for future document review and approval workflows.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
+- **ReactJS** – Frontend framework
+- **PDF.js / react-pdf** – PDF rendering
+- **Bootstrap / CSS** – UI styling
+- **JavaScript (ES6+)**
+- **HTML Canvas / SVG** – Annotations & markings
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Features
+- Upload and view PDF files
+- Navigate between PDF pages
+- Highlight text or selected areas
+- Add questions/comments to a specific page
+- Draw or place a signature
+- Visual markers saved per page
+- Browser-based (no server-side PDF processing)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Use Cases
+- Document review & approval
+- Legal or contract annotation
+- Educational PDF question marking
+- Real estate or financial document validation
+- Internal review workflows
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Structure (Typical)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How It Works
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. User uploads or opens a PDF file
+2. PDF is rendered in the browser using **PDF.js**
+3. User selects an action:
+   - Highlight
+   - Add Question
+   - Sign
+4. Annotation is drawn using **Canvas/SVG overlays**
+5. All markings are mapped to:
+   - Page number
+   - Coordinates
+   - Annotation type
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> This POC focuses on **UI interaction and annotation logic**, not permanent PDF modification.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
